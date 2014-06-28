@@ -13,6 +13,9 @@ $(window).ready(function() {
 			'width' : width
 		})
 
+		$(".contact-content").css({
+			'right' : width
+		})
 
 	});
 	$(".first, .second, .third").css({

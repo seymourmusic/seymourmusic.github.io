@@ -27,13 +27,13 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
             overflow: hidden;
         }
         .main-content ul {
-            padding-top: 100px;
+            padding-top: 10%;
         }
         .main-content ul li {
             color: #e9e8df;
             list-style: none;
             padding: 10px;
-            padding-left: 30px;
+            padding-left: 10%;
             font-size: 5em;
             font-weight: bold;
         }
@@ -50,16 +50,18 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
         .first {
             background:#b8b8b8;
             left: 0;
-            transition: left 1s linear;
-            -webkit-transition: left 1s linear;
+            transition: left 1s ease-in-out;
+            -webkit-transition: left 1s ease-in-out;
+             -moz-transition: left 1s ease-in-out;
             box-shadow: 0px -5px 50px #333;
             z-index: 1003;
         }
         .second {
             background: #eeeae1;
             left: 33%;
-            transition: left 1s linear;
-            -webkit-transition: left 1s linear;
+            transition: left 1s ease-in-out;
+            -webkit-transition: left 1s ease-in-out;
+             -moz-transition: left 1s ease-in-out;
             box-shadow: 0px -5px 50px #333;
             z-index: 1002;
         }
@@ -67,8 +69,9 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
             background: url(images/seymour_about_image.jpg) no-repeat;
             background-size: cover;
             left: 66%;
-            transition: left 1s linear;
-            -webkit-transition: left 1s linear;
+            transition: left 1s ease-in-out;
+            -webkit-transition: left 1s ease-in-out;
+             -moz-transition: left 1s ease-in-out;
             box-shadow: 0px -5px 50px #333;
             z-index: 1001;
         }
@@ -77,21 +80,27 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
             left: 0 !important;
             width: 34%;
             height: 67%;
-            transition: left 1s linear; 
+            transition: left 1s ease-in-out; 
+             -moz-transition: left 1s ease-in-out;
+              -moz-transition: left 1s ease-in-out;
         }
         .second-anim {
             position: absolute;
             left: 33% !important;
             width: 34%;
             height: 67%;
-            -webkit-transition: left 0.75s linear;   
+            -webkit-transition: left 0.75s ease-in-out;
+             -moz-transition: left 0.75ss ease-in-out;
+              -moz-transition: left 0.75s ease-in-out;   
         }
         .third-anim {
             position: absolute;
             left: 66% !important;
             width: 34%;
             height: 67%;
-            -webkit-transition: left 0.5s linear;
+            -webkit-transition: left 0.5s ease-in-out;
+             -moz-transition: left 0.5s ease-in-out;
+              -moz-transition: left 0.5s ease-in-out;
         }
         .third-anim .exit {
             position: absolute;
@@ -114,6 +123,7 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
             box-shadow: 0px -5px 50px #333;
             transition: right 1s ease;
             -webkit-transition: right 1s ease;
+             -moz-transition: right 1s ease;
         }
         .contact-content .exit {
             position: absolute;
@@ -140,6 +150,7 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
             height: 50%;
             transition: bottom 1s ease;
             -webkit-transition: bottom 1s ease;
+             -moz-transition: bottom 1s ease;
         }
         .image-links a {
             width: 25%;
@@ -155,6 +166,7 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
             max-height: 450px;
             transition: opacity 1s ease;
             -webkit-transition: opacity 1s ease;
+            -moz-transition: opacity 1s ease;
         }
         .icon-anim {
             bottom: 0 !important;
@@ -170,6 +182,7 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
             bottom: -320px;
             transition: 1s bottom ease;
             -webkit-transition: 1s bottom ease;
+             -moz-transition: bottom 1s ease;
         }
         .widget .exit {
             position: absolute;

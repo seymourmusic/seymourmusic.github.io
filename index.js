@@ -1,10 +1,24 @@
 $(window).ready(function() {
 	alert("new site working");
 	var width = $(window).width();
+
+	var checkForMobile = function() {
+		if (width <= 960) {
+			$(".head h1").addClass("mobile_h1");
+			$(".main-content ul li").addClass("mobile_li");
+		}
+		else {
+			$(".head h1").removeClass("mobile_h1");
+			$(".main-content ul li").removeClass("mobile_li");
+		}
+	}
+
+	checkForMobile();
+
 	$(".main-content").addClass("active-div");
 
 	$(window).resize(function() {
-		var width = $(window).width();
+		width = $(window).width();
 		$(".first, .second, .third").css({
 			'left' : width
 		})
@@ -17,7 +31,9 @@ $(window).ready(function() {
 			'right' : width
 		})
 
+		checkForMobile();
 	});
+
 	$(".first, .second, .third").css({
 		'left' : width
 	});
@@ -55,5 +71,8 @@ $(window).ready(function() {
 	});
 	$(".widget .exit").click(function() {
 		$(".music-anim").removeClass("music-anim");
+	});
+	$(window).click(function() {
+		alert(width);
 	});
 });

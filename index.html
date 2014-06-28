@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <style type="text/css">
+    /* Eric Meyer's Reset CSS v2.0 - http://cssreset.com */
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{border:0;font-size:100%;font:inherit;vertical-align:baseline;margin:0;padding:0}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:none}table{border-collapse:collapse;border-spacing:0}
+
+        .head {
+            height: 33%;
+            width: 100%;
+            background: white;
+        }
+        .head h1 {
+            position: absolute;
+            top: 10%;
+            right: 40px;
+            font-size: 6em;
+        }
+        .main-content {
+            position: absolute;
+            top: 33%;
+            height: 67%;
+            width: 100%;
+            background: url(images/seymour_home_image.jpg) fixed;
+            background-size: cover;
+            overflow: hidden;
+        }
+        .main-content ul {
+            padding-top: 100px;
+        }
+        .main-content ul li {
+            color: #e9e8df;
+            list-style: none;
+            padding: 10px;
+            padding-left: 30px;
+            font-size: 5em;
+            font-weight: bold;
+        }
+        .active-div {
+            z-index: 1000;
+        }
+        .first, .second, .third {
+            position: absolute;
+            width: 34%;
+            height: 67%;
+            top: 33%;
+            opacity: 1;
+        }
+        .first {
+            background:#b8b8b8;
+            left: 0;
+            transition: left 1s linear;
+            -webkit-transition: left 1s linear;
+            box-shadow: 0px -5px 50px #333;
+            z-index: 1003;
+        }
+        .second {
+            background: #eeeae1;
+            left: 33%;
+            transition: left 1s linear;
+            -webkit-transition: left 1s linear;
+            box-shadow: 0px -5px 50px #333;
+            z-index: 1002;
+        }
+        .third {
+            background: url(images/seymour_about_image.jpg) no-repeat;
+            background-size: cover;
+            left: 66%;
+            transition: left 1s linear;
+            -webkit-transition: left 1s linear;
+            box-shadow: 0px -5px 50px #333;
+            z-index: 1001;
+        }
+        .first-anim {
+            position: absolute;
+            left: 0 !important;
+            width: 34%;
+            height: 67%;
+            transition: left 1s linear; 
+        }
+        .second-anim {
+            position: absolute;
+            left: 33% !important;
+            width: 34%;
+            height: 67%;
+            -webkit-transition: left 0.75s linear;   
+        }
+        .third-anim {
+            position: absolute;
+            left: 66% !important;
+            width: 34%;
+            height: 67%;
+            -webkit-transition: left 0.5s linear;
+        }
+        .third-anim .exit {
+            position: absolute;
+            top: 50px;
+            right: 50px;
+            z-index: 1001;
+        }
+        .third-anim .exit:hover {
+            opacity: 0.5;
+        }
+        .contact-content {
+            position: absolute;
+            border-top: 5px solid #777777;
+            bottom: 0;
+            height: 67%;
+            width: 100%;
+            z-index: 1001;
+            overflow: hidden;
+            background: white;
+            box-shadow: 0px -5px 50px #333;
+            transition: right 1s ease;
+            -webkit-transition: right 1s ease;
+        }
+        .contact-content .exit {
+            position: absolute;
+            top: 50px;
+            right: 50px;
+            z-index: 1001;
+        }
+        .contact-content .exit:hover {
+            opacity: 0.5;
+        }
+        .contact-content .text{
+            padding: 10% 0 0 5%;
+        }
+        .contact-content .text h1 {
+            font-size: 500%;
+        }
+        .contact-content .text p {
+            font-size: 200%;
+        }
+        .image-links {
+            position: absolute;
+            bottom: -450px;
+            width: 100%;
+            height: 50%;
+            transition: bottom 1s ease;
+            -webkit-transition: bottom 1s ease;
+        }
+        .image-links a {
+            width: 25%;
+            display: inline;
+            float: left;
+            height: 400px;
+        }
+        .image-links a img {
+            position: absolute;
+            bottom: 0;
+            width: 25%;
+            opacity: 0.5;
+            max-height: 450px;
+            transition: opacity 1s ease;
+            -webkit-transition: opacity 1s ease;
+        }
+        .icon-anim {
+            bottom: 0 !important;
+        }
+        .contact-anim {
+            right: 0 !important;
+        }
+        .image-links a img:hover {
+            opacity: 1;
+        }
+       .widget {
+            position: absolute;
+            bottom: -320px;
+            transition: 1s bottom ease;
+            -webkit-transition: 1s bottom ease;
+        }
+        .widget .exit {
+            position: absolute;
+            top: 10px;
+            right: 50px;
+        }
+        .music-anim {
+            bottom: 0 !important;
+        }
+
+    </style>
+    <title></title>
+</head>
+<body>
+    <div class="head">
+        <h1>WILLIAM SEYMOUR</h1>
+    </div>
+
+    <div class="main-content">
+        <div class="widget" style="display:inline-block;width:100%;height:320px;margin:0;padding:0;border:0;">
+            <img class="exit" src="images/exit_white.png">
+            <iframe class="widget_iframe" src="http://www.reverbnation.com/widget_code/html_widget/artist_1727419?widget_id=50&amp;posted_by=artist_1727419&pwc[design]=default&pwc[background_color]=%23ffffff&pwc[included_songs]=1&pwc[photo]=0%2C1&pwc[size]=fit" width="100%" height="100%" frameborder="0" scrolling="no"></iframe><div class="footer_branding" style="margin-top:-5px;font-size:10px;font-family:Arial;"><center><a href="http://www.reverbnation.com/band-promotion/how-to-sell-music-on-itunes?utm_campaign=a_features_distribution&utm_medium=widget&utm_source=HTML5_Player&utm_content=widgetfooter_Learn how to put a song on itunes at ReverbNation.com" target="_blank" style="text-decoration:none;color:#444;"></a></center></div>
+        </div>
+        <ul>
+            <li><font color="#c36654">home</font></li>
+
+            <li class="about">about</li>
+            <li class="contact">contact</li>
+            <li class="music">music</li>
+        </ul>
+    </div>
+
+    <div class="about-content">
+        <div class="first">
+
+        </div>
+
+        <div class="second">
+
+        </div>
+
+        <div class="third">
+            <img class="exit" src="images/exit_white.png">
+        </div>
+    </div>
+    <div class="contact-content">
+        <img class="exit" src="images/exit.png">
+        <div class="text">
+            <h1>Connect Test 12 with William</h1>
+            <p>below you can like, follow, or fan William Seymour.  For booking opportunities please contact him through his email.</p>
+        </div>
+        <div class="image-links">
+            <a href="#"><img src="images/facebook.jpg"></a>
+            <a href="#"><img src="images/twitter.jpg"></a>
+            <a href="#"><img src="images/reverb.jpg"></a>
+            <a href="#"><img src="images/facebook.jpg"></a>
+        </div>
+    </div>
+        <a class="twitter-timeline" href="https://twitter.com/MusicianSeymour" data-widget-id="478926025015820288">Tweets by @MusicianSeymour</a>
+    <script src="jQuery.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>
+

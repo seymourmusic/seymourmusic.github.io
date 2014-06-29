@@ -1,6 +1,9 @@
 $(window).ready(function() {
-	alert("new site working");
 	var width = $(window).width();
+
+	$(".bg-vid").css({
+		'width' : width
+	})
 
 	var checkForMobile = function() {
 		if (width <= 960) {
@@ -71,8 +74,5 @@ $(window).ready(function() {
 	});
 	$(".widget .exit").click(function() {
 		$(".music-anim").removeClass("music-anim");
-	});
-	$(window).click(function() {
-		alert(width);
 	});
 });

@@ -11,6 +11,10 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
             width: 100%;
             background: white;
         }
+        .bg-vid {
+            position: fixed;
+            top: 33%;
+        }
         .head h1 {
             position: absolute;
             bottom: 70%;
@@ -25,12 +29,12 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
             top: 33%;
             height: 67%;
             width: 100%;
-            background: url(images/seymour_home_image.jpg) fixed;
             background-size: cover;
             overflow: hidden;
         }
         .main-content ul {
             padding-top: 10%;
+            z-index: 1002;
         }
         .main-content ul li {
             color: #e9e8df;
@@ -201,12 +205,15 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 
     </style>
     <title>William Seymour Music</title>
-   <script type="text/javascript" src="//use.typekit.net/foq8nwq.js"></script>
-    <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+   <!--<script type="text/javascript" src="//use.typekit.net/foq8nwq.js"></script>
+    <script type="text/javascript">try{Typekit.load();}catch(e){}</script>-->
 </head>
 <body>
     <div class="head">
         <h1>WILLIAM SEYMOUR</h1>
+        <video class="bg-vid" autoplay loop>
+            <source src="images/seymour_vid.mp4" type="video/mp4">
+        </video>
     </div>
 
     <div class="main-content">

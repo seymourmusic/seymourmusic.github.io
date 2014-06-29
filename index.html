@@ -50,6 +50,21 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
         .active-div {
             z-index: 1000;
         }
+
+        .about-content .text {
+            position: absolute;
+            top: 50%;
+            left: 5%;
+            width: 60%;
+            z-index: 1005;
+        }
+        .about-content .text h3 {
+            font-size: 5em;
+        }
+        .about-content .text p {
+            font-size: 2.5em;
+            line-height: 150%;
+        }
         .first, .second, .third {
             position: absolute;
             width: 34%;
@@ -63,7 +78,7 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
             transition: left 1s ease-in-out;
             -webkit-transition: left 1s ease-in-out;
              -moz-transition: left 1s ease-in-out;
-            box-shadow: 0px -5px 50px #333;
+
             z-index: 1003;
         }
         .second {
@@ -72,7 +87,6 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
             transition: left 1s ease-in-out;
             -webkit-transition: left 1s ease-in-out;
              -moz-transition: left 1s ease-in-out;
-            box-shadow: 0px -5px 50px #333;
             z-index: 1002;
         }
         .third {
@@ -82,7 +96,6 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
             transition: left 1s ease-in-out;
             -webkit-transition: left 1s ease-in-out;
              -moz-transition: left 1s ease-in-out;
-            box-shadow: 0px -5px 50px #333;
             z-index: 1001;
         }
         .first-anim {
@@ -99,18 +112,18 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
             left: 33% !important;
             width: 34%;
             height: 67%;
-            -webkit-transition: left 0.75s ease-in-out;
-             -moz-transition: left 0.75ss ease-in-out;
-              -moz-transition: left 0.75s ease-in-out;   
+            -webkit-transition: left 1s ease-in-out;
+             -moz-transition: left 1s ease-in-out;
+              -moz-transition: left 1s ease-in-out;   
         }
         .third-anim {
             position: absolute;
             left: 66% !important;
             width: 34%;
             height: 67%;
-            -webkit-transition: left 0.5s ease-in-out;
-             -moz-transition: left 0.5s ease-in-out;
-              -moz-transition: left 0.5s ease-in-out;
+            -webkit-transition: left 1s ease-in-out;
+             -moz-transition: left 1s ease-in-out;
+              -moz-transition: left 1s ease-in-out;
         }
         .third-anim .exit {
             position: absolute;
@@ -123,14 +136,13 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
         }
         .contact-content {
             position: absolute;
-            border-top: 5px solid #777777;
+            border-top: 2px solid #777777;
             bottom: 0;
             height: 67%;
             width: 100%;
             z-index: 1001;
             overflow: hidden;
             background: white;
-            box-shadow: 0px -5px 50px #333;
             transition: right 1s ease;
             -webkit-transition: right 1s ease;
              -moz-transition: right 1s ease;
@@ -205,8 +217,8 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 
     </style>
     <title>William Seymour Music</title>
-   <script type="text/javascript" src="//use.typekit.net/foq8nwq.js"></script>
-    <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+   <!--<script type="text/javascript" src="//use.typekit.net/foq8nwq.js"></script>
+    <script type="text/javascript">try{Typekit.load();}catch(e){}</script>-->
 </head>
 <body>
     <div class="head">
@@ -231,6 +243,10 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
     </div>
 
     <div class="about-content">
+        <div class="text">
+            <h3>what about him?</h3>
+            <p>William brings it all to the proverbial table: singer, guitarist, bassist, song-writer. Let him give you musical maturity and technical backbone; thick bass lines and thought-provokin solos; insatiable choruses and intentful lyrics. William Seymour is the musician's troubadour.</p>
+        </div>
         <div class="first">
 
         </div>

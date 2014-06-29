@@ -1,4 +1,5 @@
 $(window).ready(function() {
+	$(".about-content .text").hide();
 	var width = $(window).width();
 
 	$(".bg-vid").css({
@@ -44,6 +45,12 @@ $(window).ready(function() {
 		'right' : width
 	});
 	$(".about").click(function() {
+		$(".about-content .text").show();
+		
+		setTimeout(function() {
+			$(".about-content .text").addClass("text-anim");
+		}, 1000);
+
 		$(".active-div").removeClass("active-div");
 		$(".first").addClass("first-anim").addClass("active-div");
 		$(".second").addClass("second-anim").addClass("active-div");

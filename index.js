@@ -46,7 +46,7 @@ $(window).ready(function() {
 	});
 	$(".about").click(function() {
 		$(".about-content .text").show();
-		
+
 		setTimeout(function() {
 			$(".about-content .text").addClass("text-anim");
 		}, 1000);
@@ -57,11 +57,11 @@ $(window).ready(function() {
 		$(".third").addClass("third-anim").addClass("active-div");
 	});
 	$(".third .exit").click(function() {
-		$(".first").removeClass("first-anim").removeClass("active-div");
-		$(".second").removeClass("second-anim").removeClass("active-div");
-		$(".third").removeClass("third-anim").removeClass("active-div");
+		$(".text-anim").removeClass("text-anim");
 		setTimeout(function() {
-			$(".contact-anim").removeClass("contact-anim");
+			$(".first").removeClass("first-anim").removeClass("active-div");
+			$(".second").removeClass("second-anim").removeClass("active-div");
+			$(".third").removeClass("third-anim").removeClass("active-div");
 		}, 1000);
 	});
 	$(".contact").click(function() {

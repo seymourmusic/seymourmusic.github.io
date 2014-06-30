@@ -68,8 +68,8 @@ $(window).ready(function() {
 			$(".first").removeClass("first-anim").removeClass("active-div");
 			$(".second").removeClass("second-anim").removeClass("active-div");
 			$(".third").removeClass("third-anim").removeClass("active-div");
+			$(".about-content .text").hide();
 		}, 1000);
-		$(".about-content .text").hide();
 	});
 	$(".contact").click(function() {
 		$(".contact-content").addClass("contact-anim");

@@ -1,6 +1,7 @@
 $(window).ready(function() {
 	$(".about-content .text").hide();
 	var width = $(window).width();
+	var height = $(window).height();
 
 	$(".bg-vid").css({
 		'width' : width
@@ -35,6 +36,11 @@ $(window).ready(function() {
 			'right' : width
 		})
 
+		$("body").css({
+		'height' : height,
+		'width' : width
+	})
+
 		checkForMobile();
 	});
 
@@ -63,6 +69,7 @@ $(window).ready(function() {
 			$(".second").removeClass("second-anim").removeClass("active-div");
 			$(".third").removeClass("third-anim").removeClass("active-div");
 		}, 1000);
+		$(".about-content .text").show();
 	});
 	$(".contact").click(function() {
 		$(".contact-content").addClass("contact-anim");

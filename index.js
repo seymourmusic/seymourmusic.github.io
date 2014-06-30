@@ -69,7 +69,7 @@ $(window).ready(function() {
 			$(".second").removeClass("second-anim").removeClass("active-div");
 			$(".third").removeClass("third-anim").removeClass("active-div");
 		}, 1000);
-		$(".about-content .text").show();
+		$(".about-content .text").hide();
 	});
 	$(".contact").click(function() {
 		$(".contact-content").addClass("contact-anim");

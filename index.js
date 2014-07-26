@@ -11,10 +11,19 @@ $(window).ready(function() {
 		if (width <= 960) {
 			$(".head h1").addClass("mobile_h1");
 			$(".main-content ul li").addClass("mobile_li");
+			$(".about-content .text h3").addClass("text-mobile-h3");
+			$(".about-content .text p").addClass("text-mobile-p");
+			$(".contact-content .text h3").addClass("mobile_h1");
+			$(".contact-content .text p").addClass("text-mobile-p");
+
 		}
 		else {
 			$(".head h1").removeClass("mobile_h1");
 			$(".main-content ul li").removeClass("mobile_li");
+			$(".about-content .text h3").removeClass("text-mobile-h3");
+			$(".about-content .text p").removeClass("text-mobile-p");
+			$(".contact-content .text h3").removeClass("mobile_h1");
+			$(".contact-content .text p").removeClass("text-mobile-p");
 		}
 	}
 

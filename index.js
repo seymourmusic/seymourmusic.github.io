@@ -15,6 +15,10 @@ $(window).ready(function() {
 			$(".about-content .text p").addClass("text-mobile-p");
 			$(".contact-content .text h3").addClass("mobile_h1");
 			$(".contact-content .text p").addClass("text-mobile-p");
+			
+			$(".main-content, .third").css({
+				'background-position' : 'center'
+			})
 
 		}
 		else {
@@ -24,6 +28,10 @@ $(window).ready(function() {
 			$(".about-content .text p").removeClass("text-mobile-p");
 			$(".contact-content .text h3").removeClass("mobile_h1");
 			$(".contact-content .text p").removeClass("text-mobile-p");
+			
+			$(".main-content, .third").css({
+				'background-position' : 'none'
+			})
 		}
 	}
 
